@@ -1,0 +1,36 @@
+{
+  "realm" : "basic",
+  "users" : [ {
+    "id" : "74361463-fe67-4ddc-ba09-4f9542368326",
+    "username" : "bob",
+    "firstName" : "bob",
+    "email" : "bob@email.com",
+    "emailVerified" : true,
+    "createdTimestamp" : 1744479242064,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-basic" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "79a13aac-a44b-4b34-9b0a-2da20e4bd6b0",
+    "username" : "service-account-bank-api",
+    "emailVerified" : false,
+    "createdTimestamp" : 1744467330904,
+    "enabled" : true,
+    "totp" : false,
+    "serviceAccountClientId" : "bank-api",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-basic" ],
+    "clientRoles" : {
+      "bank-api" : [ "uma_protection" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  } ]
+}

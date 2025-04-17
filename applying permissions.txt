@@ -1,0 +1,26 @@
+permissions:
+  resource-based - scope-based
+  
+scoped-based você aplica no escopo ou nos resources
+
+resource-based você aplica nos resources
+
+scopes representam conjunto de direitos num resource
+
+In order to grant/deny access to a resource:
+  1.
+  - Define your policies
+  - Define your permissions
+  - Apply your policies to your permissions
+  - Associate your permissions to a scope or resource
+  2.
+  - Group policies under an aggregated policy
+  - Associate the aggregated policy with scope-based permission.
+  - Apply scoped-base permission to the resource
+  - Apply scoped-base permission to all associated scope.
+  3.
+  - Create permissions solely for your resources via resource-based permissions.
+  - Associate other permissions solely with a scope via scoped-based permission.
+  
+  
+

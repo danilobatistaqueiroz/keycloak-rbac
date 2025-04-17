@@ -1,0 +1,9 @@
+docker exec -u 0 -it example-keycloakweb-1 sh # iteract with bash
+
+/opt/keycloak/bin/kc.sh export --dir /tmp/export --realm basic --users different_files --optimized
+
+exit
+
+docker ps | grep keycloak
+
+docker cp 9be5b110bc0a:/tmp/export/basic-realm.json ~/estudos/keycloak/realm-backup/
